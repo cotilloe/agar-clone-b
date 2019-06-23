@@ -1,5 +1,5 @@
 {
-  "name": "agar-clone",
+  "name": "agar-clone-b",
   "version": "1.0.0",
   "description": "A simple Agar.io clone",
   "main": "server/server.js",
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/huytd/agar.io-clone.git"
+    "url": "https://github.com/cotilloe/agar-clone-b.git"
   },
-  "author": "Huy Tran",
+  "author": "Gene C. (Using Work by Huy Tran et al.)",
   "license": "MIT",
   "contributors": [
     "abalabahaha <hi@abal.moe> (https://github.com/abalabahaha)",
