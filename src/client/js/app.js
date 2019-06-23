@@ -153,6 +153,24 @@ $( "#split" ).click(function() {
     window.canvas.reenviar = false;
 });
 
+$( '#gameAreaWrapper' ).mousedown(function(event) {
+    switch (event.which) {
+        case 1:
+            socket.emit('2');
+			window.canvas.reenviar = false;
+            break;
+        case 2:
+            console.log("Middle Mouse button pressed.");
+            break;
+        case 3:
+            socket.emit('1');
+			window.canvas.reenviar = false;
+			break;
+        default:
+            console.log("You have not clicked me yet!");
+    }
+});
+
 // socket stuff.
 function setupSocket(socket) {
     // Handle ping.
