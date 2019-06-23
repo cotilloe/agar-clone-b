@@ -152,17 +152,18 @@ $( "#split" ).click(function() {
     socket.emit('2');
     window.canvas.reenviar = false;
 });
-
+// Adding Mouse Controls for split and feed
 $( '#gameAreaWrapper' ).mousedown(function(event) {
     switch (event.which) {
         case 1:
-            socket.emit('2');
+           socket.emit('2');
 			window.canvas.reenviar = false;
             break;
         case 2:
             console.log("Middle Mouse button pressed.");
             break;
         case 3:
+            event.preventDefault();
             socket.emit('1');
 			window.canvas.reenviar = false;
 			break;
