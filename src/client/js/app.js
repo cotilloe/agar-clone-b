@@ -156,7 +156,8 @@ $( "#split" ).click(function() {
 $( '#gameAreaWrapper' ).mousedown(function(event) {
     switch (event.which) {
         case 1:
-           socket.emit('2');
+            event.preventDefault();
+            socket.emit('2');
 			window.canvas.reenviar = false;
             break;
         case 2:
